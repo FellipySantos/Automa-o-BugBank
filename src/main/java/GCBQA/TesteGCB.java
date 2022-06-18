@@ -1,3 +1,4 @@
+package GCBQA;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class TesteGCB {
@@ -11,10 +12,7 @@ public class TesteGCB {
 		driver.get("https://vermillion-pavlova-8ff398.netlify.app/#");
 		Cadastro.testarCadastro(prints, emailCadastro, senhaCadastro, driver);
 		Login.testarLogin(prints, emailCadastro, senhaCadastro, driver);
+		Transferencia.testarTransferencia(prints, driver);
+		driver.close();
 	}
-	
-	
-	
-	
-	
 }
